@@ -25,7 +25,6 @@ Build a product catalog with a **live search bar**, a **responsive grid**, and *
 - [Code Walkthrough](#-code-walkthrough)
 - [From Column to ListView to GridView](#-from-column-to-listview-to-gridview)
 - [Getting Started](#-getting-started)
-- [Practice Challenges](#-practice-challenges)
 - [Useful Resources](#-useful-resources)
 
 ---
@@ -277,23 +276,6 @@ flutter run
    ```
 3. Add a new `Product` to the list in `product.dart` using `image: 'Images/your_image.jpg'`.
 4. Do a **full restart** (not hot reload) so Flutter picks up the new asset.
-
----
-
-## 🏋️ Practice Challenges
-
-Try these on your own to practice what you learned. They go from easy ⭐ to harder ⭐⭐⭐.
-
-- [ ] ⭐ **Add a product** — add a 9th product with your own image.
-- [ ] ⭐ **Change the theme** — pick a different seed color and change the card's shadow color to match.
-- [ ] ⭐ **Better search field** — give the `TextField` a hint (`"Search products..."`) and a search icon using `InputDecoration`.
-- [ ] ⭐⭐ **Case-insensitive search** — right now searching `"watch"` won't find `"Smart Watch"`. Fix it with `.toLowerCase()`.
-- [ ] ⭐⭐ **Search the description too** — match products whose name **or** description contains the query.
-- [ ] ⭐⭐ **No results message** — show a `Text("No products found")` when the filtered list is empty.
-- [ ] ⭐⭐ **Real discount** — add a `discount` field to `Product` and show it in the badge instead of the fixed `20%`.
-- [ ] ⭐⭐⭐ **Favorite button** — make the ❤️ toggle between `favorite_border` and `favorite` when tapped (hint: the card needs state).
-- [ ] ⭐⭐⭐ **Responsive grid** — use `MediaQuery.of(context).size.width` to show 1 column on phones and 3 on wide screens.
-- [ ] ⭐⭐⭐ **Fix the test** — `test/widget_test.dart` is still the default counter test. Rewrite it to check that `"Shopping App"` appears on screen.
 
 ---
 
